@@ -29,7 +29,7 @@ A sample snmpd.conf file has been uploaded with the project for reference.
 ------------
 Step 1: Navigate to the Project
 
-	cd Project/firstsite
+	cd firstsite
 
 Step 2: Install all the dependencies
 
@@ -40,7 +40,7 @@ Step 2: Install all the dependencies
 -----------------------
 Step 1: Run the Django server
 
-	cd Project/firstsite
+	cd firstsite
 	python manage.py runserver
 
 Step 2: Open Browser: http://127.0.0.1:8000/
