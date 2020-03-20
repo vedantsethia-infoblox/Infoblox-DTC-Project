@@ -184,7 +184,7 @@ def pool(request):
 			re = request.GET['restart']	
 			return redirect('http://127.0.0.1:8000/dtc/')
 	except:
-		return redirect('http://127.0.0.1/main/')
+		return redirect('http://127.0.0.1:8000/main/')
 	else:
 
 		return render(request,'core/pool.html', {
