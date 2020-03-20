@@ -1,8 +1,9 @@
-######################################################################################
+-----------
                                   Copyright 2020                                            
                       Author: Vedant Sethia <vsethia@infoblox.com>                         
-  For any issues/suggestions please write to vsethia@infoblox.com , kvasudevan@infoblox.com           
-######################################################################################
+  	For any issues/suggestions please write to vsethia@infoblox.com , kvasudevan@infoblox.com           
+
+-----------
 
 # Bridging the DTC Gap
 
