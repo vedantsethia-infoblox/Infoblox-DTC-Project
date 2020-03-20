@@ -1,32 +1,32 @@
-###########################################################################################
+##################################################################################
                                   Copyright 2020                                            
                       Author: Vedant Sethia <vsethia@infoblox.com>                         
   For any issues/suggestions please write to vsethia@infoblox.com , kvasudevan@infoblox.com           
-###########################################################################################
+##################################################################################
 
 # Bridging the DTC Gap
 
 ## Introduction
-------------
+
 Infoblox DNS Traffic Control(DTC) integrates GSLB functionality with core DDI network services.
 Highly automated, it provides the performance, scalability, and availability that organizations require.
 DTC load balances DNS traffic based on various parameters such as client location, server location and server availability.
 
 ## About the project
------------------
+
 This project aims at dynamically changing the DTC pool ratios based on parameters which can be polled using 
 SNMP such as CPU Utilization, NIC Usage, Memory, RAM etc. 
 Please note that the current version of the project focusses on CPU Utilization.
 The solution takes a CPU Utilization threshold as an input. The DTC servers are polled for their current CPU Utilization and consolidated at the DTC pool level. Once the CPU threshold is reached, the algorithm calculates the optimum configuration according to the current utilization metrics and modifies the ratios accordingly.
 
 ## Pre-requisites
---------------
+
  - System, on which you plan to run the solution, should have python version 3+ with a working pip command.
  - All the DTC servers need to have snmpd configured and running.
 A sample snmpd.conf file has been uploaded with the project for reference.
 
 ## Installation
-------------
+
 Step 1: Navigate to the Project
 
 	cd firstsite
@@ -37,7 +37,7 @@ Step 2: Install all the dependencies
 	python setup.py install
 
 ## Running the Application
------------------------
+
 Step 1: Run the Django server
 
 	cd firstsite
@@ -45,8 +45,8 @@ Step 1: Run the Django server
 
 Step 2: Open Browser: http://127.0.0.1:8000/
 
-Instructions
-------------
+## Instructions
+
  - Login page:
    Enter the grid master IP address, username and password
 
